@@ -1,0 +1,285 @@
+{
+    "evalStrID": "1713251518469757451",
+    "evalID": 1713251518469757451,
+    "evalName": "profile-data-extraction-qa",
+    "evalType": "model",
+    "evalGroupName": "extraction-qa",
+    "evalModel": "gpt-3.5-turbo-0125",
+    "evalFormat": "json",
+    "schemas": [
+        {
+            "schemaID": 1713247896742096000,
+            "schemaStrID": "1713247896742096000",
+            "schemaName": "profile-data-extraction",
+            "schemaGroup": "professional-profile",
+            "schemaDescription": "Extracts detailed profile information from a specified data source based on provided personal and professional details.",
+            "isObjArray": false,
+            "fields": [
+                {
+                    "fieldID": 1713247897011549531,
+                    "fieldStrID": "1713247897011549531",
+                    "fieldName": "interests",
+                    "fieldDescription": "List of interests of the individual, such as professional areas, technologies, or business fields.",
+                    "dataType": "array[string]",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518567316659,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896979425646,
+                    "fieldStrID": "1713247896979425646",
+                    "fieldName": "connections",
+                    "fieldDescription": "List of names of professional connections relevant to the individual.",
+                    "dataType": "array[string]",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518512548560,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896947225167,
+                    "fieldStrID": "1713247896947225167",
+                    "fieldName": "company",
+                    "fieldDescription": "The company where the individual is currently employed.",
+                    "dataType": "string",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518492771679,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896915094796,
+                    "fieldStrID": "1713247896915094796",
+                    "fieldName": "last_name",
+                    "fieldDescription": "The last name of the individual.",
+                    "dataType": "string",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518584352388,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896882534032,
+                    "fieldStrID": "1713247896882534032",
+                    "fieldName": "first_name",
+                    "fieldDescription": "The first name of the individual.",
+                    "dataType": "string",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518550700346,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896847721464,
+                    "fieldStrID": "1713247896847721464",
+                    "fieldName": "email",
+                    "fieldDescription": "The email address of the individual.",
+                    "dataType": "string",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518529664504,
+                            "evalOperator": "contains",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "@",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "schemaMap": {
+        "1713247896742096000": {
+            "schemaID": 1713247896742096000,
+            "schemaStrID": "1713247896742096000",
+            "schemaName": "profile-data-extraction",
+            "schemaGroup": "professional-profile",
+            "schemaDescription": "Extracts detailed profile information from a specified data source based on provided personal and professional details.",
+            "isObjArray": false,
+            "fields": [
+                {
+                    "fieldID": 1713247897011549531,
+                    "fieldStrID": "1713247897011549531",
+                    "fieldName": "interests",
+                    "fieldDescription": "List of interests of the individual, such as professional areas, technologies, or business fields.",
+                    "dataType": "array[string]",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518567316659,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896979425646,
+                    "fieldStrID": "1713247896979425646",
+                    "fieldName": "connections",
+                    "fieldDescription": "List of names of professional connections relevant to the individual.",
+                    "dataType": "array[string]",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518512548560,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896947225167,
+                    "fieldStrID": "1713247896947225167",
+                    "fieldName": "company",
+                    "fieldDescription": "The company where the individual is currently employed.",
+                    "dataType": "string",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518492771679,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896915094796,
+                    "fieldStrID": "1713247896915094796",
+                    "fieldName": "last_name",
+                    "fieldDescription": "The last name of the individual.",
+                    "dataType": "string",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518584352388,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896882534032,
+                    "fieldStrID": "1713247896882534032",
+                    "fieldName": "first_name",
+                    "fieldDescription": "The first name of the individual.",
+                    "dataType": "string",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518550700346,
+                            "evalOperator": "length-greater-than",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "0",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fieldID": 1713247896847721464,
+                    "fieldStrID": "1713247896847721464",
+                    "fieldName": "email",
+                    "fieldDescription": "The email address of the individual.",
+                    "dataType": "string",
+                    "evalMetrics": [
+                        {
+                            "evalMetricID": 1713251518529664504,
+                            "evalOperator": "contains",
+                            "evalState": "filter",
+                            "evalExpectedResultState": "pass",
+                            "evalMetricComparisonValues": {
+                                "evalComparisonBoolean": false,
+                                "evalComparisonNumber": 0,
+                                "evalComparisonString": "@",
+                                "evalComparisonInteger": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
