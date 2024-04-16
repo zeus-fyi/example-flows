@@ -12,7 +12,7 @@ def start_or_schedule_wf(wf_exec_params):
     # Check the response status
     if response.status_code == 200:
         print(response.json())
-        print("Workflow created successfully!")
+        print("Workflow started successfully!")
     else:
         print(response.json())
         print("Failed to create workflow. Status Code:", response.status_code)

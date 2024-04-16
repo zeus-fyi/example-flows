@@ -1,0 +1,64 @@
+{
+  "email": "fake@ai.com",
+  "first_name": "John",
+  "last_name": "Doe",
+  "company": "OpenAI",
+  "connections": [
+    "Jane Smith",
+    "Emily Johnson",
+    "Michael Brown"
+  ],
+  "interests": [
+    "Artificial Intelligence",
+    "Robotics",
+    "Software Development"
+  ]
+}
+{
+  "email": "example1@tech.com",
+  "first_name": "Alice",
+  "last_name": "Johnson",
+  "company": "Tech Innovations",
+  "connections": [
+    "Robert White",
+    "Lisa Green",
+    "James Hall"
+  ],
+  "interests": [
+    "Cloud Computing",
+    "Cybersecurity",
+    "Data Science"
+  ]
+}
+{
+  "email": "example2@creative.com",
+  "first_name": "Brian",
+  "last_name": "Lee",
+  "company": "Creative Solutions",
+  "connections": [
+    "Sarah Foster",
+    "Aaron Martin",
+    "Nancy Wright"
+  ],
+  "interests": [
+    "Graphic Design",
+    "Marketing",
+    "UI/UX"
+  ]
+}
+{
+  "email": "example3@finance.com",
+  "first_name": "Catherine",
+  "last_name": "Smith",
+  "company": "Financial Ventures",
+  "connections": [
+    "Evan Thompson",
+    "Sophia Lopez",
+    "Daniel Garcia"
+  ],
+  "interests": [
+    "Investment Banking",
+    "Stock Market Analysis",
+    "Venture Capital"
+  ]
+}
