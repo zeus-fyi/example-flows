@@ -1,6 +1,7 @@
 import json
 
 from mockingbird.mockingbooks_py.entities import EntitiesFilter, search_entities
+from mockingbird.mockingbooks_py.evals import get_eval_by_name
 from mockingbird.mockingbooks_py.runs import get_run
 from mockingbird.mockingbooks_py.workflows import start_or_schedule_wf
 
@@ -24,7 +25,7 @@ def read_text_file(file_path):
         return f"An error occurred: {e}"
 
 
-def start_wf(prompt=None):
+def start_wf(wf_name, prompt=None):
     with open('mocks/wf_exec.json', 'r') as file:
         wf_exec = json.load(file)
 
@@ -40,7 +41,7 @@ def start_wf(prompt=None):
         wf_exec['taskOverrides'] = tmp
 
     wf_item = {
-        'workflowName': 'profile-extraction-wf',
+        'workflowName': wf_name
     }
     wf_exec['workflows'] = [wf_item]
     pretty_data = json.dumps(wf_exec, indent=4)
@@ -50,6 +51,7 @@ def start_wf(prompt=None):
 
 
 if __name__ == '__main__':
+    wf_name_input = 'profile-extraction-with-qa-eval-wf'
     fc = read_text_file('fake_inputs/profile_examples.txt')
-    start_wf(fc)
+    start_wf(wf_name_input, fc)
 
