@@ -1,0 +1,52 @@
+{
+  "schemaID": 0,
+  "schemaStrID": "0",
+  "schemaName": "profile-data-extraction",
+  "schemaGroup": "professional-profile",
+  "schemaDescription": "Extracts detailed profile information from a specified data source based on provided personal and professional details.",
+  "isObjArray": false,
+  "fields": [
+    {
+      "fieldID": 0,
+      "fieldStrID": "0",
+      "fieldName": "email",
+      "fieldDescription": "The email address of the individual.",
+      "dataType": "string"
+    },
+    {
+      "fieldID": 0,
+      "fieldStrID": "0",
+      "fieldName": "first_name",
+      "fieldDescription": "The first name of the individual.",
+      "dataType": "string"
+    },
+    {
+      "fieldID": 0,
+      "fieldStrID": "0",
+      "fieldName": "last_name",
+      "fieldDescription": "The last name of the individual.",
+      "dataType": "string"
+    },
+    {
+      "fieldID": 0,
+      "fieldStrID": "0",
+      "fieldName": "company",
+      "fieldDescription": "The company where the individual is currently employed.",
+      "dataType": "string"
+    },
+    {
+      "fieldID": 0,
+      "fieldStrID": "0",
+      "fieldName": "connections",
+      "fieldDescription": "List of names of professional connections relevant to the individual.",
+      "dataType": "array[string]"
+    },
+    {
+      "fieldID": 0,
+      "fieldStrID": "0",
+      "fieldName": "interests",
+      "fieldDescription": "List of interests of the individual, such as professional areas, technologies, or business fields.",
+      "dataType": "array[string]"
+    }
+  ]
+}
