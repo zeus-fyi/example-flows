@@ -1,0 +1,30 @@
+{
+  "retrievalStrID": "",
+  "retrievalID": 0,
+  "retrievalName": "website-analysis",
+  "retrievalGroup": "proxies",
+  "retrievalItemInstruction": {
+    "retrievalPlatform": "api",
+    "retrievalPrompt": "",
+    "retrievalPlatformGroups": "",
+    "retrievalKeywords": "",
+    "retrievalUsernames": "",
+    "discordFilters": {
+      "categoryTopic": "",
+      "categoryName": "",
+      "category": ""
+    },
+    "webFilters": {
+      "routingGroup": "iris",
+      "lbStrategy": "",
+      "maxRetries": 20,
+      "backoffCoefficient": 2,
+      "endpointRoutePath": "/?url={url}",
+      "endpointREST": "get",
+      "payloadPreProcessing": "iterate",
+      "headers": {
+        "X-Scrape-Html": "true"
+      }
+    }
+  }
+}
