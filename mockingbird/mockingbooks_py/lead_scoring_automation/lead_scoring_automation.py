@@ -6,6 +6,7 @@ from mockingbird.mockingbooks_py.analysis_tasks import create_analysis_task
 from mockingbird.mockingbooks_py.evals import create_or_update_eval
 from mockingbird.mockingbooks_py.google_search_regex.dynamic_google_search import poll_run
 from mockingbird.mockingbooks_py.schemas import create_or_update_schema, get_schema_by_name
+from mockingbird.mockingbooks_py.triggers import get_trigger_id_by_name
 from mockingbird.mockingbooks_py.workflows import create_wf, wf_exec_template, start_or_schedule_wf
 from mockingbird.mockingbooks_py.workflows_examples import wf_model_task_template, wf_model_agg_task_template
 
@@ -50,8 +51,25 @@ def create_developer_platform_schema():
 
 def create_ef_filter_on_score_dev_platform():
     with open('mocks/eval_fn_dev_platform.json', 'r') as file:
-        eval_fn_pl = json.load(file)
-    create_or_update_eval(eval_fn_pl)
+        data = json.load(file)
+    schema = get_schema_by_name('lead_scoring_dev_platform')
+    for field in schema['fields']:
+        if field['fieldName'] == 'lead_score':
+            field['evalMetrics'] = [
+                {
+                    "evalMetricID": 0,
+                    "evalOperator": "gt",
+                    "evalState": "filter",
+                    "evalExpectedResultState": "pass",
+                    "evalMetricComparisonValues": {
+                        "evalComparisonInteger": 15
+                    }
+                },
+            ]
+    data['schemas'] = [schema]
+    pretty_data = json.dumps(data, indent=4)
+    print(pretty_data)
+    create_or_update_eval(data)
 
 
 def create_ef_filter_on_score_llm_wfs():
@@ -248,7 +266,7 @@ wf_item_details = {
 }
 
 if __name__ == '__main__':
-    create_llm_wf_scoring_analysis_task()
+    create_ef_filter_on_score_dev_platform()
     # iterate_on_matches()
     #
     # search_entities_f = EntitiesFilter(
