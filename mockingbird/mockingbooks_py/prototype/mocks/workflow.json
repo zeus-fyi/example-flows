@@ -1,0 +1,12 @@
+{
+  "workflowName": "profile-extraction-wf",
+  "workflowGroupName": "extractions",
+  "stepSize": 30,
+  "stepSizeUnit": "minutes",
+  "models": {
+  },
+  "evalsMap": {},
+  "evalTasksMap": {},
+  "aggregateSubTasksMap": {},
+  "analysisRetrievalsMap": {}
+}
