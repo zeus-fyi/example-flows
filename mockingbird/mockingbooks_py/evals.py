@@ -2,8 +2,8 @@ import json  # Import the json module
 
 import requests
 
-from examples.mockingbird.mockingbooks_py.api_setup import get_headers, api_v1_path
-from examples.mockingbird.mockingbooks_py.triggers import trigger_function_template
+from mockingbird.mockingbooks_py.api_setup import get_headers, api_v1_path
+from mockingbird.mockingbooks_py.triggers import trigger_function_template
 
 
 def get_evals(pp=False):

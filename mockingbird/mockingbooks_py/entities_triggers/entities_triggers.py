@@ -1,9 +1,9 @@
 import json
 
-from examples.mockingbird.mockingbooks_py.evals import create_or_update_eval
-from examples.mockingbird.mockingbooks_py.retrievals import create_or_update_retrieval
-from examples.mockingbird.mockingbooks_py.schemas import create_or_update_schema
-from examples.mockingbird.mockingbooks_py.triggers import create_or_update_trigger
+from mockingbird.mockingbooks_py.evals import create_or_update_eval
+from mockingbird.mockingbooks_py.retrievals import create_or_update_retrieval
+from mockingbird.mockingbooks_py.schemas import create_or_update_schema
+from mockingbird.mockingbooks_py.triggers import create_or_update_trigger
 
 
 def io_create_entities():

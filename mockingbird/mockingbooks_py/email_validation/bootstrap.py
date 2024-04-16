@@ -1,9 +1,9 @@
 import json
 
-from examples.mockingbird.mockingbooks_py.analysis_tasks import get_task_id_by_name, create_analysis_task
-from examples.mockingbird.mockingbooks_py.retrievals import create_or_update_retrieval, get_retrieval_id_by_name
-from examples.mockingbird.mockingbooks_py.schemas import create_or_update_schema
-from examples.mockingbird.mockingbooks_py.workflows import create_wf
+from mockingbird.mockingbooks_py.analysis_tasks import get_task_id_by_name, create_analysis_task
+from mockingbird.mockingbooks_py.retrievals import create_or_update_retrieval, get_retrieval_id_by_name
+from mockingbird.mockingbooks_py.schemas import create_or_update_schema
+from mockingbird.mockingbooks_py.workflows import create_wf
 
 
 # currently unused

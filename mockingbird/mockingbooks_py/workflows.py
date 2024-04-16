@@ -2,7 +2,7 @@ import json
 
 import requests
 
-from examples.mockingbird.mockingbooks_py.api_setup import api_v1_path, get_headers
+from mockingbird.mockingbooks_py.api_setup import api_v1_path, get_headers
 
 
 def start_or_schedule_wf(wf_exec_params):

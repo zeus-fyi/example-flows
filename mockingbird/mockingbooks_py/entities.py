@@ -4,7 +4,7 @@ from typing import Optional, List, Any
 
 import requests
 
-from examples.mockingbird.mockingbooks_py.api_setup import get_headers, api_v1_path
+from mockingbird.mockingbooks_py.api_setup import get_headers, api_v1_path
 
 
 @dataclass

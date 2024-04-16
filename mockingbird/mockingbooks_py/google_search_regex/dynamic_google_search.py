@@ -1,8 +1,8 @@
 import json
 
-from examples.mockingbird.mockingbooks_py.entities import EntitiesFilter, search_entities
-from examples.mockingbird.mockingbooks_py.runs import get_run
-from examples.mockingbird.mockingbooks_py.workflows import start_or_schedule_wf
+from mockingbird.mockingbooks_py.entities import EntitiesFilter, search_entities
+from mockingbird.mockingbooks_py.runs import get_run
+from mockingbird.mockingbooks_py.workflows import start_or_schedule_wf
 
 
 def start_wf(prompt=None, agg_prompt=None):

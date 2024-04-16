@@ -1,13 +1,13 @@
 import json
 import os
 
-from examples.mockingbird.mockingbooks_py.agg_tasks import create_agg_task
-from examples.mockingbird.mockingbooks_py.analysis_tasks import create_analysis_task
-from examples.mockingbird.mockingbooks_py.evals import create_or_update_eval
-from examples.mockingbird.mockingbooks_py.google_search_regex.dynamic_google_search import poll_run
-from examples.mockingbird.mockingbooks_py.schemas import create_or_update_schema
-from examples.mockingbird.mockingbooks_py.workflows import create_wf, wf_exec_template, start_or_schedule_wf
-from examples.mockingbird.mockingbooks_py.workflows_examples import wf_model_task_template, wf_model_agg_task_template
+from mockingbird.mockingbooks_py.agg_tasks import create_agg_task
+from mockingbird.mockingbooks_py.analysis_tasks import create_analysis_task
+from mockingbird.mockingbooks_py.evals import create_or_update_eval
+from mockingbird.mockingbooks_py.google_search_regex.dynamic_google_search import poll_run
+from mockingbird.mockingbooks_py.schemas import create_or_update_schema
+from mockingbird.mockingbooks_py.workflows import create_wf, wf_exec_template, start_or_schedule_wf
+from mockingbird.mockingbooks_py.workflows_examples import wf_model_task_template, wf_model_agg_task_template
 
 
 def create_llm_workflows_schema():

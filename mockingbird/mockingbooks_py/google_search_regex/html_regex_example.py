@@ -2,8 +2,8 @@ import json
 import re
 import time
 
-from examples.mockingbird.mockingbooks_py.entities import EntitiesFilter, search_entities
-from examples.mockingbird.mockingbooks_py.google_search_regex.dynamic_google_search import start_wf
+from mockingbird.mockingbooks_py.entities import EntitiesFilter, search_entities
+from mockingbird.mockingbooks_py.google_search_regex.dynamic_google_search import start_wf
 
 agg_prompt = ("Can you summarize the relevant person and/or associated business entity from the search results? It "
               "should use the most relevant search result that matches best and ignore others to prevent mixing"

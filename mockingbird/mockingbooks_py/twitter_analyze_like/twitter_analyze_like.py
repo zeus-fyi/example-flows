@@ -1,11 +1,11 @@
 import json
 
-from examples.mockingbird.mockingbooks_py.analysis_tasks import create_analysis_task
-from examples.mockingbird.mockingbooks_py.evals import create_or_update_eval
-from examples.mockingbird.mockingbooks_py.retrievals import create_or_update_retrieval
-from examples.mockingbird.mockingbooks_py.schemas import create_or_update_schema
-from examples.mockingbird.mockingbooks_py.triggers import create_or_update_trigger
-from examples.mockingbird.mockingbooks_py.workflows import start_or_schedule_wf, create_wf
+from mockingbird.mockingbooks_py.analysis_tasks import create_analysis_task
+from mockingbird.mockingbooks_py.evals import create_or_update_eval
+from mockingbird.mockingbooks_py.retrievals import create_or_update_retrieval
+from mockingbird.mockingbooks_py.schemas import create_or_update_schema
+from mockingbird.mockingbooks_py.triggers import create_or_update_trigger
+from mockingbird.mockingbooks_py.workflows import start_or_schedule_wf, create_wf
 
 wf_model_task_template = {
     "taskStrID": "",

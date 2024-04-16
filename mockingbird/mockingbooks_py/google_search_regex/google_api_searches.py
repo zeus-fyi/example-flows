@@ -1,8 +1,8 @@
 import json
 
-from examples.mockingbird.mockingbooks_py.analysis_tasks import get_task_id_by_name
-from examples.mockingbird.mockingbooks_py.evals import get_eval_id_by_name
-from examples.mockingbird.mockingbooks_py.workflows import create_wf
+from mockingbird.mockingbooks_py.analysis_tasks import get_task_id_by_name
+from mockingbird.mockingbooks_py.evals import get_eval_id_by_name
+from mockingbird.mockingbooks_py.workflows import create_wf
 
 
 def create_google_regex_search_index_entities_wf(task_str_id, eval_str_id, agg_task_str_id, agg_eval_str_id=None):
